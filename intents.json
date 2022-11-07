@@ -1,0 +1,165 @@
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": ["hi there", "hello","haroo","yaw","wassup", "hi", "hey", "holla", "hello"],
+            "responses": ["hello thanks for checking in", "hi there, how can i help you"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "good bye", "see you later"],
+            "responses": ["have a nice time, welcome back again", "bye bye"],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "okay","Thank you","thankyou", "That's helpful", "Awesome, thanks", "Thanks for helping me", "wow", "great"],
+            "responses": ["Happy to help!", "Any time!","you're welcome", "My pleasure"],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"],
+            "context": [""]
+        },
+        {
+            "tag": "name1",
+            "patterns": ["what's your name?","who are you?"],
+            "responses": ["I'm just an AI Chatbot. I only exist in the internet","I'm a OPENUp an AI Chatbot"],
+            "context": [""]
+        },
+        {
+            "tag": "name",
+            "patterns": ["my name is ", "I'm ","I am"],
+            "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}"],
+            "context": [""]
+        },
+        {
+            "tag": "fav",
+            "patterns": ["I need a favour", "can you help me"],
+            "responses": ["Well, go ahead and name it i see whether i can be able to help"],
+            "context": [""]
+        },
+        {
+            "tag": "need",
+            "patterns": ["I need you", "All I need is you","I want you"],
+            "responses": ["Yes I'm here to assist you"],
+            "context": [""]
+        },
+        {
+            "tag": "AI",
+            "patterns": ["  What is AI?"],
+            "responses": [" Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+            "context": [""]
+        },
+        {
+            "tag": "abbr",
+            "patterns": ["wtf","wow"],
+            "responses": ["Don't be surprised"],
+            "context": [""]
+        },
+        {
+            "tag": "lang",
+            "patterns": [ "  What language are you written in? " ],
+            "responses": [ " Python.", " I am written in Python." ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "who",
+            "patterns": ["  Who are you?"],
+            "responses": [" I am OPENUp, an AI Chatbot."],
+            "context": [""]
+        },
+        {
+            "tag": "bot1",
+            "patterns": ["are you a bot"],
+            "responses": ["Yes. I work and all my operations are based on the internet servers."],
+            "context": [""]
+        },
+        {
+            "tag": "what",
+            "patterns": ["What are you", "What is your purpose","What do you do"],
+            "responses": ["I am an AI Chatbot that helps you find who you are and your preferred pronouns."],
+            "context": [""]
+        },
+        {
+            "tag": "pronouns",
+            "patterns": ["What are pronouns", "What are pronouns in lgbt", "I don't know what are pronouns"],
+            "responses": [ "Pronouns come in many forms. They are linguistic tools that we use to refer to people." ],
+            "context": [""]
+        },
+        {
+            "tag": "sexual",
+            "patterns": [ "How are sexual orientation determined??", "How are gender identity determined" ],
+            "responses": [ "Sexual orientation is about who you're attracted to and who you feel drawn to romantically, emotionally, and sexually. It's different than gender identity. Gender identity isn't about who you're attracted to, but about who you are male, female, genderqueer, etc." ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "identity",
+            "patterns": ["Having trouble about my sexually identity","Gender Identity","Sexual Orientation"],
+            "responses": [ "If your having trouble identifiying yourself, here is a test for you to take to better understand yourself: https://psycho-tests.com/test/gender-identity-test." ],
+            "context": [""]
+        },
+        {
+            "tag": "LGBT",
+            "patterns": [ "  What is a LGBT", "  What is a LGBTQ+", " Define LGBTQ+"],
+            "responses": [ " LGBTQ+ is an initialism that stands for lesbian, gay, bisexual, and transgender" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "Lesbian",
+            "patterns": [ "  What is a lesbian", " Define lesbian" ],
+            "responses": [ " A lesbian is a woman who is physically and romantically attracted to other women." ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "Gay",
+            "patterns": [ "  What is Gay", " Define Gay" ],
+            "responses": [ " A Bisexual is a person sexually attracted not exclusively to people of one particular gender.", " A person who is attracted to both men and women." ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "Bisexual",
+            "patterns": [ "  What is a Bisexual", " Define Bisexual" ],
+            "responses": [ " Gay is a man who is physically and romantically attracted to other men." ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "Transexual",
+            "patterns": [ "  What is a Transexual", " Define Transexual" ],
+            "responses": [ " A transsexual is a person who has decided that they want to live as a person of the opposite sex" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "do",
+            "patterns": ["what can you do for me","what is your work","how can you help me","what can you help me do"],
+            "responses": ["My work is to help you understand your identity, I can also help you find communities/event within the country"],
+            "context": [""]
+        },
+        {
+            "tag": "events",
+            "patterns": [ "what are the upcoming events", "upcoming events" ],
+            "responses": [ "There are currently no upcoming events" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "violence",
+            "patterns": [ "Is it wrong to be part of the LGBTQ+ Community?" ],
+            "responses": [ "No, no one can stop you from voicing your opinion and be part of the LGBTQ+ Community because Sexual orientation and gender identity are integral aspects of our selves and should never lead to discrimination or abuse." ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "organization",
+            "patterns": [ "What are organization", "What are organization that helps the LGBT", "How can i support the LGBT communites" ],
+            "responses": [ "Here are the list of orginazation for you to look at, http://www.galangphilippines.org/,  http://upbabaylan.org/,  http://upbabaylan.org/, https://www.facebook.com/BahaghariLGBT/" ],
+            "context": [ "" ]
+        },
+        {
+            "tag": "comming",
+            "patterns": [ "How do I come out to my family and friends?" ],
+            "responses": [ "you can tell to the person or family who you trust the mosts through phone, email or text message because it'll make you less nervous if you're having a second thought about coming out." ],
+            "context": [""]
+        }
+    ]
+}

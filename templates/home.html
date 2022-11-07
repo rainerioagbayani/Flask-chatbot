@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css')}}" />
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Etel Chatbot</title>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ url_for('home') }}">Name of chatbot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('hotlines') }}">Hotlines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('org') }}">View Organizations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('chat_bot') }}">Chatbot</a>
+              </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link"  href="{{ url_for('support') }}">Join support groups</a>
+            </li>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link"  href="{{ url_for('about') }}">About</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+            </li>
+        </div>
+      </nav>
+    
+
+</head>
+
+<div class="jumbotron main-layout jumbotron-fluid" style="margin: 0px; background-color: #1f2937;" >
+  <div class="container">       
+    <div class="row h-100 mw-100">
+        <div class="col-md-6">
+            <h1 class="hero-text" style="font-size: 48px;
+            font-weight: 800;
+            color: #F9faf8;">
+              OpenUP. The AI Chatbot you can talk to about LGBT</h1>
+            <p style="font-size: 18px; color: #e5e7eb;;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero urna, hendrerit sit amet accumsan quis, iaculis a turpis. 
+              Donec euismod, est ac aliquet aliquam, enim lacus sollicitudin tellus, quis egestas lectus ipsum et enim. Curabitur rutrum consectetur tempus. 
+              Integer condimentum velit sed dui pharetra, vitae varius diam semper. Cras eu justo nunc. Sed condimentum imperdiet tristique. 
+              Etiam scelerisque libero non lobortis gravida. Vestibulum sodales ex ante, nec condimentum dolor tincidunt sit amet. 
+              Phasellus quis odio semper, dignissim tortor ut, malesuada leo. Donec id eros a metus fermentum ornare id et massa.
+            </p>
+            <a class="btn btn-primary" type="submit" href="{{ url_for('chat_bot') }}">Chat with OpenUP</a>
+        </div>
+        <div class="col-md-6">
+          <div class="jumbotron header-layout" style="background-image: url('https://scontent.fmnl14-1.fna.fbcdn.net/v/t1.15752-9/104936682_1294478407415231_7814397639372956061_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHBnDaFBeoI1GNID59E_nYOGYfsB3MgQssZh-wHcyBCy7gRkGTdHmf6GVx66h1vRIrPaRkCeUSHj50x7r-wu9iB&_nc_ohc=rrFGmCbUU08AX-Jfwky&_nc_ht=scontent.fmnl14-1.fna&oh=03_AdST0h2v4EgrICqVGkzVehYSfjhk5Yy9txWJaH9ERFgzKA&oe=63900587'); height: 400px;">
+            <div class="container">
+              <h1 class="display-4" style="color: transparent;"></h1>
+              <p class="lead" style="color: transparent;"></p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- information section -->
+
+<div class="jumbotron information-layout jumbotron-fluid" style="margin: 0px">
+  <div class="container">
+    <!-- Main section-->
+    <div class="row">
+      <div class="col-md text-center">
+          <h3 style=" font-size: 36px;
+          font-weight: 800;
+          color: #1f2937;">Information about OpenUP</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row mt-4">
+        <div class="col-md-3">
+          <figure class="figure" style="font-size: 18px; color: #e5e7eb;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPK8pDcHvn-vD1jQo4KkRkp52MWPepQcKlkA&usqp=CAU" class="figure-img img-fluid rounded" alt="chat">
+            <figcaption class="figure-caption">Chat with OpenUP</figcaption>
+          </figure>
+          
+        </div>
+
+        <div class="col-md-3">
+          <figure class="figure" style="font-size: 18px; color: #e5e7eb;">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/079/984/original/phone-icon-flat-style-isolated-on-grey-background-telephone-symbol-call-illustration-sign-for-web-and-mobile-app-free-vector.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">View all Violence Against Women and Children Hotlines</figcaption>
+          </figure>
+        </div>
+
+        <div class="col-md-3">
+          <figure class="figure" style="font-size: 18px; color: #e5e7eb;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkc7ZBFlnOCts58BVxEbCz4s87cTPZXKZipg&usqp=CAU" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">See all Organizations that helps domestic violence victims</figcaption>
+          </figure>
+        </div>
+
+        <div class="col-md-3">
+          <figure class="figure" style="font-size: 18px; color: #e5e7eb;">
+            <img src="https://sewickleypresby.org/wp-content/uploads/2018/04/Support-groups-logo-1.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">Join different support groups</figcaption>
+          </figure>
+        </div>
+        
+    </div>
+
+  </div>
+</div>
+    
+
+     
+   
+</body>
+
+</html>

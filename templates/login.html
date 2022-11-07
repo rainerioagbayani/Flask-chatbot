@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% extends "layout.html" %}
+    {% block content %}
+    <body>
+        <div class="container">
+            <div class="row" style="margin-top: 40px">
+                <div class="col-sm-6" style="margin: auto;">
+                    <form method="POST">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" name="uname" class="form-control" id="uname" />
+                          <label class="form-label" for="email">Username</label>
+                        </div>
+                      
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" name="passw" id="passw" class="form-control" />
+                          <label class="form-label" for="form2Example2">Password</label>
+                        </div>
+                      
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                          <div class="col d-flex justify-content-center">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                              <label class="form-check-label" for="form2Example31"> Remember me </label>
+                            </div>
+                          </div>
+                      
+                          <div class="col">
+                            <!-- Simple link -->
+                            <a href="#!">Forgot password?</a>
+                          </div>
+                        </div>
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                      
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          <p>Not a member? <a href="/register">Register</a></p>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+       
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+{% endblock %}
+</body>
+</html>
