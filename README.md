@@ -1,4 +1,4 @@
-# Install and activate virtual environment
+# Setup
 
 Install
 ```pip install virtualenv```
