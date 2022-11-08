@@ -38,6 +38,7 @@ def login():
         
         login = user.query.filter_by(username=uname, password=passw).first()
         if login is not None:
+            session['logged_in'] = True
             return redirect(url_for("home"))
     return render_template("login.html")
 # register
@@ -58,9 +59,9 @@ def register():
 # logout 
 @app.route('/logout')
 def logout():
-    session.pop('user_id', None)
-    flash('You have successfully logged out.')
+    session['logged_in'] = False
     return redirect(url_for("login"))
+
 # homepage
 @app.route("/home")
 def home():
@@ -78,13 +79,6 @@ def hotlines():
 def about():
     return render_template("about.html")
 
-@app.route("/organizations")
-def org():
-    return render_template("organizations.html")
-
-@app.route("/support")
-def support():
-    return render_template("support.html")
 
 @app.route("/get", methods=["POST"])
 def chatbot_response():
